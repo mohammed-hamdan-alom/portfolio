@@ -1,13 +1,14 @@
-import Hero from "@/components/main/Hero";
-import Navbar from "@/components/main/navbar";
+import Navbar from "@/components/navbar";
+import Hero from "@/components/Hero";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
-    <main className="h-screen w-full">
-      <div className="container flex flex-col w-[1000px] gap-20">
-        <div className="mt-4 h-[64px]">
-          <Navbar />
-        </div>
+    <main className="">
+      <div className="container flex flex-col gap-20 pt-4">
+        <Navbar />
+        <Hero />
+        <Experience />
       </div>
     </main>
   );
